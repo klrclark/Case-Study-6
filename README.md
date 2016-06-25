@@ -22,8 +22,13 @@ CountryData -  Country Data - ed-stats data set
 Since I chose to download the most current file there were 195 ranked countries in the dataset.
 
 There are two data sets that are used to complete this case study:
+
 1.	Country data (234 observations) – Contains data by country, Region, , income population classification, and various other variables that were not used in this case study
-2.	Gross Domestic Product Ranking Table - FGDP (243 observations) – contains a view of a countries economy over a course of a year. The data supplied is the country, the ranking of the country, and the economy for that country
+
+2.	Gross Domestic Product Ranking Table - FGDP (243 observations) – contains a view of a countries economy over a course of a year.
+The data supplied is the country, the ranking of the country, and the economy for that country.
+
 A Data set was created by combining the Country Data with the Gross Domestic Product Ranking table on the country code.  Out of the 228 countries in the FGDP data set only 195 records that match to the country data dataset.
+
 The goal of this case study was to cleanse the data and then perform some simple analytics against the cleansed data.
 
