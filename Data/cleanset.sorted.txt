@@ -1,0 +1,196 @@
+"CountryCode","Ranking","Country.x","Economy","IncomeGroup","IncomeBreak"
+"190","TUV",195,"Tuvalu",38,"Upper middle income",1
+"98","KIR",194,"Kiribati",167,"Lower middle income",2
+"124","MHL",193,"Marshall Islands",187,"Upper middle income",1
+"151","PLW",192,"Palau",251,"Upper middle income",1
+"63","FSM",191,"Micronesia, Fed. Sts.",318,"Lower middle income",2
+"173","STP",190,"São Tomé and Principe",337,"Lower middle income",2
+"186","TON",189,"Tonga",434,"Upper middle income",1
+"47","DMA",188,"Dominica",524,"Upper middle income",1
+"39","COM",187,"Comoros",624,"Low income",3
+"198","VCT",186,"St. Vincent and the Grenadines",729,"Upper middle income",1
+"204","WSM",185,"Samoa",800,"Lower middle income",2
+"201","VUT",184,"Vanuatu",815,"Lower middle income",2
+"69","GMB",183,"Gambia, The",851,"Low income",3
+"99","KNA",182,"St. Kitts and Nevis",852,"High income: nonOECD",4
+"73","GRD",181,"Grenada",912,"Upper middle income",1
+"70","GNB",180,"Guinea-Bissau",1022,"Low income",3
+"166","SLB",179,"Solomon Islands",1158,"Lower middle income",2
+"8","ATG",178,"Antigua and Barbuda",1221,"High income: nonOECD",4
+"108","LCA",177,"St. Lucia",1404,"Upper middle income",1
+"185","TMP",176,"Timor-Leste",1417,"Lower middle income",2
+"179","SYC",175,"Seychelles",1423,"Upper middle income",1
+"46","DJI",174,"Djibouti",1589,"Lower middle income",2
+"22","BLZ",173,"Belize",1699,"Upper middle income",1
+"30","CAF",172,"Central African Republic",1723,"Low income",3
+"40","CPV",171,"Cabo Verde",1871,"Lower middle income",2
+"28","BTN",170,"Bhutan",1959,"Lower middle income",2
+"106","LBR",169,"Liberia",2013,"Low income",3
+"114","LSO",168,"Lesotho",2181,"Lower middle income",2
+"74","GRL",167,"Greenland",2441,"High income: nonOECD",4
+"62","FRO",166,"Faroe Islands",2613,"High income: nonOECD",4
+"122","MDV",165,"Maldives",3062,"Upper middle income",1
+"12","BDI",164,"Burundi",3094,"Low income",3
+"76","GUY",163,"Guyana",3097,"Lower middle income",2
+"1","ADO",162,"Andorra",3249,"High income: nonOECD",4
+"136","MWI",161,"Malawi",4258,"Low income",3
+"26","BRB",160,"Barbados",4355,"High income: nonOECD",4
+"178","SWZ",159,"Swaziland",4413,"Lower middle income",2
+"181","TGO",158,"Togo",4518,"Low income",3
+"60","FJI",157,"Fiji",4532,"Upper middle income",1
+"131","MNE",156,"Montenegro",4588,"Upper middle income",1
+"167","SLE",155,"Sierra Leone",4838,"Low income",3
+"134","MRT",154,"Mauritania",5061,"Lower middle income",2
+"174","SUR",153,"Suriname",5210,"Upper middle income",1
+"110","LIE",152,"Liechtenstein",5488,"High income: nonOECD",4
+"23","BMU",151,"Bermuda",5574,"High income: nonOECD",4
+"169","SOM",150,"Somalia",5707,"Low income",3
+"68","GIN",149,"Guinea",6624,"Low income",3
+"101","KSV",148,"Kosovo",7387,"Lower middle income",2
+"96","KGZ",147,"Kyrgyz Republic",7404,"Lower middle income",2
+"160","RWA",146,"Rwanda",7890,"Low income",3
+"120","MDA",145,"Moldova",7962,"Lower middle income",2
+"139","NER",144,"Niger",8169,"Low income",3
+"19","BHS",143,"Bahamas, The",8511,"High income: nonOECD",4
+"81","HTI",142,"Haiti",8713,"Low income",3
+"183","TJK",141,"Tajikistan",9242,"Low income",3
+"14","BEN",140,"Benin",9575,"Low income",3
+"128","MLT",139,"Malta",9643,"High income: nonOECD",4
+"121","MDG",138,"Madagascar",10593,"Low income",3
+"126","MKD",137,"Macedonia, FYR",11324,"Upper middle income",1
+"7","ARM",136,"Armenia",11644,"Lower middle income",2
+"141","NIC",135,"Nicaragua",11806,"Lower middle income",2
+"104","LAO",134,"Lao PDR",11997,"Lower middle income",2
+"132","MNG",133,"Mongolia",12016,"Lower middle income",2
+"127","MLI",132,"Mali",12037,"Low income",3
+"15","BFA",131,"Burkina Faso",12542,"Low income",3
+"135","MUS",130,"Mauritius",12630,"Upper middle income",1
+"202","WBG",129,"West Bank and Gaza",12738,"Lower middle income",2
+"138","NAM",128,"Namibia",12995,"Upper middle income",1
+"4","ALB",127,"Albania",13212,"Upper middle income",1
+"172","SSD",126,"South Sudan",13282,"Lower middle income",2
+"91","JAM",125,"Jamaica",13891,"Upper middle income",1
+"180","TCD",124,"Chad",13922,"Low income",3
+"37","COG",123,"Congo, Rep.",14177,"Lower middle income",2
+"209","ZWE",122,"Zimbabwe",14197,"Low income",3
+"71","GNQ",121,"Equatorial Guinea",15530,"High income: nonOECD",4
+"164","SEN",120,"Senegal",15658,"Lower middle income",2
+"29","BWA",119,"Botswana",15813,"Upper middle income",1
+"133","MOZ",118,"Mozambique",15938,"Low income",3
+"66","GEO",117,"Georgia",16530,"Lower middle income",2
+"97","KHM",116,"Cambodia",16778,"Low income",3
+"152","PNG",115,"Papua New Guinea",16929,"Lower middle income",2
+"88","ISL",114,"Iceland",17036,"High income: OECD",5
+"27","BRN",113,"Brunei Darussalam",17105,"High income: nonOECD",4
+"64","GAB",112,"Gabon",18180,"Upper middle income",1
+"20","BIH",111,"Bosnia and Herzegovina",18521,"Upper middle income",1
+"79","HND",110,"Honduras",19385,"Lower middle income",2
+"144","NPL",109,"Nepal",19770,"Low income",3
+"2","AFG",108,"Afghanistan",20038,"Low income",3
+"43","CYP",107,"Cyprus",23226,"High income: nonOECD",4
+"168","SLV",106,"El Salvador",25164,"Lower middle income",2
+"57","EST",105,"Estonia",26485,"High income: OECD",5
+"192","UGA",104,"Uganda",26998,"Low income",3
+"208","ZMB",103,"Zambia",27066,"Lower middle income",2
+"187","TTO",102,"Trinidad and Tobago",28883,"High income: nonOECD",4
+"156","PRY",101,"Paraguay",30881,"Lower middle income",2
+"117","LVA",100,"Latvia",31287,"High income: nonOECD",4
+"36","CMR",99,"Cameroon",32051,"Lower middle income",2
+"24","BOL",98,"Bolivia",32996,"Lower middle income",2
+"207","ZAR",97,"Congo, Dem. Rep.",33121,"Low income",3
+"18","BHR",96,"Bahrain",33851,"High income: nonOECD",4
+"35","CIV",95,"Côte d'Ivoire",34254,"Lower middle income",2
+"92","JOR",94,"Jordan",35827,"Upper middle income",1
+"205","YEM",93,"Yemen, Rep.",35955,"Lower middle income",2
+"67","GHA",92,"Ghana",38617,"Lower middle income",2
+"107","LBY",91,"Libya",41143,"Upper middle income",1
+"170","SRB",90,"Serbia",43866,"Upper middle income",1
+"105","LBN",89,"Lebanon",45731,"Upper middle income",1
+"148","PAN",88,"Panama",46213,"Upper middle income",1
+"184","TKM",87,"Turkmenistan",47932,"Upper middle income",1
+"191","TZA",86,"Tanzania",48057,"Low income",3
+"115","LTU",85,"Lithuania",48354,"High income: nonOECD",4
+"188","TUN",84,"Tunisia",48613,"Upper middle income",1
+"176","SVN",83,"Slovenia",49491,"High income: OECD",5
+"41","CRI",82,"Costa Rica",49553,"Upper middle income",1
+"118","MAC",81,"Macao SAR, China",55502,"High income: nonOECD",4
+"58","ETH",80,"Ethiopia",55612,"Low income",3
+"17","BGR",79,"Bulgaria",56717,"Upper middle income",1
+"80","HRV",78,"Croatia",57113,"High income: nonOECD",4
+"195","URY",77,"Uruguay",57471,"High income: nonOECD",4
+"75","GTM",76,"Guatemala",58827,"Lower middle income",2
+"95","KEN",75,"Kenya",60937,"Low income",3
+"197","UZB",74,"Uzbekistan",62644,"Lower middle income",2
+"49","DOM",73,"Dominican Republic",64138,"Upper middle income",1
+"129","MMR",72,"Myanmar",64330,"Low income",3
+"116","LUX",71,"Luxembourg",64874,"High income: OECD",5
+"163","SDN",70,"Sudan",73815,"Lower middle income",2
+"11","AZE",69,"Azerbaijan",75198,"Upper middle income",1
+"21","BLR",68,"Belarus",76139,"Upper middle income",1
+"42","CUB",67,"Cuba",77150,"Upper middle income",1
+"111","LKA",66,"Sri Lanka",78824,"Lower middle income",2
+"146","OMN",65,"Oman",81797,"High income: nonOECD",4
+"175","SVK",64,"Slovak Republic",100249,"High income: OECD",5
+"53","ECU",63,"Ecuador",100917,"Upper middle income",1
+"154","PRI",62,"Puerto Rico",103135,"High income: nonOECD",4
+"119","MAR",61,"Morocco",110009,"Lower middle income",2
+"193","UKR",60,"Ukraine",131805,"Lower middle income",2
+"82","HUN",59,"Hungary",138347,"Upper middle income",1
+"3","AGO",58,"Angola",138357,"Upper middle income",1
+"102","KWT",57,"Kuwait",163612,"High income: nonOECD",4
+"16","BGD",56,"Bangladesh",172887,"Low income",3
+"200","VNM",55,"Vietnam",186205,"Lower middle income",2
+"158","ROM",54,"Romania",199044,"Upper middle income",1
+"145","NZL",53,"New Zealand",199970,"High income: OECD",5
+"149","PER",52,"Peru",202596,"Upper middle income",1
+"44","CZE",51,"Czech Republic",205270,"High income: OECD",5
+"157","QAT",50,"Qatar",210109,"High income: nonOECD",4
+"50","DZA",49,"Algeria",213518,"Upper middle income",1
+"94","KAZ",48,"Kazakhstan",217872,"Upper middle income",1
+"87","IRQ",47,"Iraq",223500,"Upper middle income",1
+"155","PRT",46,"Portugal",230117,"High income: OECD",5
+"72","GRC",45,"Greece",235574,"High income: OECD",5
+"147","PAK",44,"Pakistan",243632,"Lower middle income",2
+"85","IRL",43,"Ireland",250814,"High income: OECD",5
+"33","CHL",42,"Chile",258062,"High income: OECD",5
+"59","FIN",41,"Finland",272217,"High income: OECD",5
+"150","PHL",40,"Philippines",284777,"Lower middle income",2
+"78","HKG",39,"Hong Kong SAR, China",290896,"High income: nonOECD",4
+"54","EGY",38,"Egypt, Arab Rep.",301499,"Lower middle income",2
+"89","ISR",37,"Israel",305675,"High income: OECD",5
+"165","SGP",36,"Singapore",307860,"High income: nonOECD",4
+"137","MYS",35,"Malaysia",338104,"Upper middle income",1
+"48","DNK",34,"Denmark",342362,"High income: OECD",5
+"206","ZAF",33,"South Africa",350141,"Upper middle income",1
+"38","COL",32,"Colombia",377740,"Upper middle income",1
+"199","VEN",31,"Venezuela, RB",381286,"Upper middle income",1
+"5","ARE",30,"United Arab Emirates",399451,"High income: nonOECD",4
+"182","THA",29,"Thailand",404824,"Upper middle income",1
+"86","IRN",28,"Iran, Islamic Rep.",425326,"Upper middle income",1
+"10","AUT",27,"Austria",436888,"High income: OECD",5
+"143","NOR",26,"Norway",499817,"High income: OECD",5
+"13","BEL",25,"Belgium",531547,"High income: OECD",5
+"6","ARG",24,"Argentina",537660,"Upper middle income",1
+"153","POL",23,"Poland",544967,"High income: OECD",5
+"140","NGA",22,"Nigeria",568508,"Lower middle income",2
+"177","SWE",21,"Sweden",571090,"High income: OECD",5
+"32","CHE",20,"Switzerland",701037,"High income: OECD",5
+"162","SAU",19,"Saudi Arabia",753832,"High income: nonOECD",4
+"189","TUR",18,"Turkey",798429,"Upper middle income",1
+"142","NLD",17,"Netherlands",879319,"High income: OECD",5
+"83","IDN",16,"Indonesia",888538,"Lower middle income",2
+"123","MEX",15,"Mexico",1294690,"Upper middle income",1
+"56","ESP",14,"Spain",1381342,"High income: OECD",5
+"100","KOR",13,"Korea, Rep.",1410383,"High income: OECD",5
+"9","AUS",12,"Australia",1454675,"High income: OECD",5
+"31","CAN",11,"Canada",1785387,"High income: OECD",5
+"159","RUS",10,"Russian Federation",1860598,"High income: nonOECD",4
+"84","IND",9,"India",2048517,"Lower middle income",2
+"90","ITA",8,"Italy",2141161,"High income: OECD",5
+"25","BRA",7,"Brazil",2416636,"Upper middle income",1
+"61","FRA",6,"France",2829192,"High income: OECD",5
+"65","GBR",5,"United Kingdom",2988893,"High income: OECD",5
+"45","DEU",4,"Germany",3868291,"High income: OECD",5
+"93","JPN",3,"Japan",4601461,"High income: OECD",5
+"34","CHN",2,"China",10354832,"Upper middle income",1
+"196","USA",1,"United States",17419000,"High income: OECD",5
