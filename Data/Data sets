@@ -1,3 +1,19 @@
 This folder contains all the datasets used in the Case Study 6
 
 GDA and Country Data are the original datasets that were downloaded from the websites detailed on the README.md file
+
+GDA1
+
+This dataset was created to remove columns 3 and 6 from the dataset.  Only columns 1,2,4, and 5 were left in the GDA1 data set
+
+GDA2
+
+This dataset was created to remove rows where all columns were NA
+
+GDA3
+
+This dataset was created to removed rows where the Economy field = ".."
+
+The GDP data was now cleansed and ready.
+
+Country Data
