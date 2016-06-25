@@ -17,3 +17,28 @@ This dataset was created to removed rows where the Economy field = ".."
 The GDP data was now cleansed and ready.
 
 Country Data
+
+CData 
+
+This dataset was created to only select columns 1, 2, and 9 from the original CountryData dataset.  This dataset had minimal data cleansing items that needed to be done
+
+Merging CData and GDA3
+
+cleanset
+
+This dataset was created when the two datasets GDA3 and CData were merged on Countrycode.  All records from the GDA3 were added to the dataset and only the records from 
+CData where there was a Country Code match was added to the table
+
+cleanset.filtered 
+
+This dataset was created to remove additional rows where there were NAs
+
+
+cleanset.sorted
+
+This dataset was created to sort the dataset by the Ranking field in order to answer the Case Study question: Sort data frame in descending order
+by GDP rank (where USA is last). What is the 13th country in the data frame?  
+
+cleanset.sorted2 
+
+this dataset was only used to ensure the data was sorted correctly
