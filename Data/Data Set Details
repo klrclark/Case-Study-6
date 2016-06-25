@@ -2,25 +2,73 @@ This folder contains all the datasets used in the Case Study 6
 
 GDA and Country Data are the original datasets that were downloaded from the websites detailed on the README.md file
 
+GDA
+
+Original dataset
+GDA <- read.csv("C:\\Users\\kclark\\Personal\\SMU\\Doing Data Science MSDS 6306\\Unit 6\\GDP.csv", stringsAsFactors = FALSE, header = FALSE)
+
 GDA1
 
 This dataset was created to remove columns 3 and 6 from the dataset.  Only columns 1,2,4, and 5 were left in the GDA1 data set
+
+The first 5 rows of the GDA data set includes the variable names and blanks.  The last 7 rows include information about the data set.  
+The first 5 rows and the last 7 rows are removed because they add no value to the data to be analyzed.
+
+#This statement will only keep rows 6 to 236 and a new version of the dataset – GDA1 is created.  
+GDA1 <- GDA[6:236,]
+
+The current GDA1 data set has 6 columns but only 4 actually contain the data for the case study.  
+The code below will remove the extra columns that are not needed.
+GDA1 <- GDA1[c(1,2,4,5)]
+
+Names to each variable are added to the data set.  The industry standard of capitalizing each word was applied.  
+The variable names are human readable and self-explanatory.
+names(GDA1) <- c("CountryCode","Ranking","Country", "Economy")
+
+There are a couple of blank records still within the data set. Set the blank 
+variables to NA for blank rows and then remove them from the data set and create a new data set GDA2
+GDA1[GDA1==""] <- NA
 
 GDA2
 
 This dataset was created to remove rows where all columns were NA
 
+GDA2 <- GDA1[apply(GDA1,1,function(x)any(!is.na(x))),]
+
+The data set GDA2 still contains records where the Economy field does not have an applicable value stored in it - " .. ".  
+fslines <- which(GDA2$Economy == " .. ")
+create a new data set GDA3 that will have ".." removed.
+
 GDA3
 
 This dataset was created to removed rows where the Economy field = ".."
+
+GDA3 <- GDA2[-which(GDA2$Economy == " .. "), ]
 
 The GDP data was now cleansed and ready.
 
 Country Data
 
+Read the csv file into R and storing the data in a data frame named CountryData
+CountryData <- read.csv("C:\\Users\\kclark\\Personal\\SMU\\Doing Data Science MSDS 6306\\Unit 6\\country.csv", stringsAsFactors = FALSE, header = FALSE)
+There are 31 columns in the data set CountryData.  Most do not have significant value to the data being analyzed.  
+Therefore, the code below will select the pertinent columns to keep and create a new data set CData
+
 CData 
 
 This dataset was created to only select columns 1, 2, and 9 from the original CountryData dataset.  This dataset had minimal data cleansing items that needed to be done
+
+CData <- CountryData[c(1,2,9)]
+
+The first row of the data set CData contains the variable names.  The code below will remove them from the data set.
+CData <- CData[-c(1), ]
+
+Names to each variable are added to the data set.  The industry standard of capitalizing each word was applied.  
+The variable names are human readable and self-explanatory.
+names(CData) <- c("CountryCode","Country", "IncomeGroup")
+
+The data set CData still contains records where the CData$IncomeGroup field is empty. The identified rows below will be removed from the CData data set
+CData <- apply(CData, 2, function(x) gsub("^$|^ $", NA, x))
 
 Merging CData and GDA3
 
@@ -29,16 +77,33 @@ cleanset
 This dataset was created when the two datasets GDA3 and CData were merged on Countrycode.  All records from the GDA3 were added to the dataset and only the records from 
 CData where there was a Country Code match was added to the table
 
+cleanset <- merge(GDA3, CData, by="CountryCode", all.GDA3=TRUE)
+
 cleanset.filtered 
 
 This dataset was created to remove additional rows where there were NAs
+
+There are still rows with NA in fields needed for data analysis.  The code below omits them from the cleanset data set.
+cleanset.filtered <- cleanset[!row.has.na,]
+
+There is an extra country variable in the cleanset.filtered dataset, this needs to be removed.
+cleanset.filtered <- cleanset.filtered[c(1,2,3,4,6)]
+
+Ranking is a character field which will make sorting difficult.  The Ranking data type was changes to a numeric data type to fix this issue.
+cleanset.filtered$Ranking <- as.numeric(cleanset.filtered$Ranking)
 
 
 cleanset.sorted
 
 This dataset was created to sort the dataset by the Ranking field in order to answer the Case Study question: Sort data frame in descending order
-by GDP rank (where USA is last). What is the 13th country in the data frame?  
+by GDP rank (where USA is last). What is the 13th country in the data frame? 
+
+Create new data set cleanset.sorted and sort by Ranking descending
+cleanset.sorted <- cleanset.filtered[order(-cleanset.filtered$Ranking),]
+
 
 cleanset.sorted2 
 
 this dataset was only used to ensure the data was sorted correctly
+
+cleanset.sorted2 <- cleanset.sorted[order(cleanset.sorted$Ranking, decreasing = =TRUE),]
