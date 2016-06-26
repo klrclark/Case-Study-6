@@ -33,7 +33,17 @@ A Data set was created by combining the Country Data with the Gross Domestic Pro
 The goal of this case study was to cleanse the data and then perform some simple analytics against the cleansed data.
 
 All Datasets created are stored in the Data Folder
+
 The Rmarkdown, .md, and html files are in the RMarkdown folder
+
+Required R Packages:
+
+1. dplyr
+2. ggplot2
+3. proto
+4. gsubfn
+5. RSQLite
+6. sqldf
 
 R Session Information
 
