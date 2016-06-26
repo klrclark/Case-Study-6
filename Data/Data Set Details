@@ -102,8 +102,4 @@ Create new data set cleanset.sorted and sort by Ranking descending
 cleanset.sorted <- cleanset.filtered[order(-cleanset.filtered$Ranking),]
 
 
-cleanset.sorted2 
 
-this dataset was only used to ensure the data was sorted correctly
-
-cleanset.sorted2 <- cleanset.sorted[order(cleanset.sorted$Ranking, decreasing = =TRUE),]
