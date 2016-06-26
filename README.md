@@ -36,6 +36,7 @@ All Datasets created are stored in the Data Folder
 The Rmarkdown, .md, and html files are in the RMarkdown folder
 
 R Session Information
+
 R version 3.3.0 (2016-05-03)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 7 x64 (build 7601) Service Pack 1
