@@ -1,0 +1,196 @@
+"Ranking","IncomeGroup","CountryQuartile"
+"2",107,"Upper middle income",3
+"3",106,"Lower middle income",3
+"4",105,"Upper middle income",3
+"5",104,"Upper middle income",3
+"6",103,"Lower middle income",3
+"7",102,"Lower middle income",3
+"8",100,"Upper middle income",3
+"9",99,"Upper middle income",3
+"10",98,"Low income",3
+"11",97,"Upper middle income",3
+"12",96,"Lower middle income",3
+"13",95,"Lower middle income",3
+"14",94,"Low income",3
+"15",93,"High income: nonOECD",3
+"16",92,"Upper middle income",3
+"17",91,"Low income",3
+"18",89,"Lower middle income",3
+"19",88,"High income: nonOECD",3
+"20",87,"Upper middle income",3
+"21",86,"Lower middle income",3
+"22",85,"Upper middle income",3
+"23",84,"Lower middle income",3
+"24",83,"Upper middle income",3
+"25",82,"Low income",3
+"26",81,"Lower middle income",3
+"27",80,"Lower middle income",3
+"28",78,"Low income",2
+"29",77,"Lower middle income",2
+"30",76,"High income: nonOECD",2
+"31",75,"High income: nonOECD",2
+"32",74,"Upper middle income",2
+"33",73,"Low income",2
+"34",72,"Lower middle income",2
+"35",71,"High income: nonOECD",2
+"36",70,"Low income",2
+"37",69,"High income: nonOECD",2
+"38",67,"Lower middle income",2
+"39",66,"Low income",2
+"40",65,"Upper middle income",2
+"41",64,"Upper middle income",2
+"42",63,"Low income",2
+"43",62,"Lower middle income",2
+"44",61,"Upper middle income",2
+"45",60,"High income: nonOECD",2
+"46",59,"High income: nonOECD",2
+"47",58,"Low income",2
+"48",56,"Low income",2
+"49",55,"Lower middle income",2
+"50",54,"Lower middle income",2
+"51",53,"Low income",2
+"52",52,"Lower middle income",2
+"53",51,"Low income",2
+"54",50,"High income: nonOECD",2
+"55",49,"Low income",2
+"56",48,"Low income",2
+"57",47,"Low income",2
+"58",45,"High income: nonOECD",2
+"59",44,"Low income",2
+"60",43,"Upper middle income",2
+"61",42,"Lower middle income",2
+"62",41,"Lower middle income",2
+"63",40,"Lower middle income",2
+"64",39,"Lower middle income",1
+"65",38,"Low income",1
+"66",37,"Low income",1
+"67",36,"Upper middle income",1
+"68",34,"Lower middle income",1
+"69",33,"Upper middle income",1
+"70",32,"Upper middle income",1
+"71",31,"Lower middle income",1
+"72",30,"Upper middle income",1
+"73",29,"Low income",1
+"74",28,"Lower middle income",1
+"75",27,"Low income",1
+"76",26,"High income: nonOECD",1
+"77",25,"Lower middle income",1
+"78",23,"Upper middle income",1
+"79",22,"Low income",1
+"80",21,"Lower middle income",1
+"81",20,"Low income",1
+"82",19,"Lower middle income",1
+"83",18,"High income: OECD",1
+"84",17,"High income: nonOECD",1
+"85",16,"Upper middle income",1
+"86",15,"Upper middle income",1
+"87",14,"Lower middle income",1
+"88",12,"Low income",1
+"89",11,"Low income",1
+"90",10,"High income: nonOECD",1
+"91",9,"Lower middle income",1
+"92",8,"High income: OECD",1
+"93",7,"Low income",1
+"94",6,"Lower middle income",1
+"95",5,"High income: nonOECD",1
+"96",4,"Lower middle income",1
+"97",3,"High income: nonOECD",1
+"98",195,"Lower middle income",5
+"99",194,"Lower middle income",5
+"100",193,"Low income",5
+"101",192,"High income: nonOECD",5
+"102",191,"Lower middle income",5
+"103",190,"Upper middle income",5
+"104",189,"Lower middle income",5
+"105",188,"Lower middle income",5
+"106",187,"Upper middle income",5
+"107",186,"Upper middle income",5
+"108",184,"Upper middle income",5
+"109",183,"Upper middle income",5
+"110",182,"Upper middle income",5
+"111",181,"Low income",5
+"112",180,"High income: nonOECD",5
+"113",179,"Upper middle income",5
+"114",178,"High income: OECD",5
+"115",177,"Upper middle income",5
+"116",176,"High income: nonOECD",5
+"117",175,"Low income",5
+"118",173,"Upper middle income",5
+"119",172,"High income: nonOECD",5
+"120",171,"High income: nonOECD",5
+"121",170,"Lower middle income",5
+"122",169,"Low income",5
+"123",168,"Lower middle income",5
+"124",167,"Upper middle income",5
+"125",166,"Low income",5
+"126",165,"High income: OECD",5
+"127",164,"Lower middle income",5
+"128",162,"Upper middle income",5
+"129",161,"Upper middle income",5
+"130",160,"Upper middle income",5
+"131",159,"Lower middle income",5
+"132",158,"High income: nonOECD",5
+"133",157,"High income: OECD",5
+"134",156,"Upper middle income",4
+"135",155,"High income: nonOECD",4
+"136",154,"Lower middle income",4
+"137",153,"Lower middle income",4
+"138",151,"Upper middle income",4
+"139",150,"Upper middle income",4
+"140",149,"High income: nonOECD",4
+"141",148,"Low income",4
+"142",147,"Lower middle income",4
+"143",146,"Upper middle income",4
+"144",145,"High income: OECD",4
+"145",144,"Upper middle income",4
+"146",143,"High income: OECD",4
+"147",142,"High income: nonOECD",4
+"148",140,"Upper middle income",4
+"149",139,"Upper middle income",4
+"150",138,"Upper middle income",4
+"151",137,"High income: OECD",4
+"152",136,"High income: OECD",4
+"153",135,"Lower middle income",4
+"154",134,"High income: OECD",4
+"155",133,"High income: OECD",4
+"156",132,"High income: OECD",4
+"157",131,"Lower middle income",4
+"158",129,"High income: nonOECD",4
+"159",128,"Lower middle income",4
+"160",127,"High income: OECD",4
+"161",126,"High income: nonOECD",4
+"162",125,"Upper middle income",4
+"163",124,"High income: OECD",4
+"164",123,"Upper middle income",4
+"165",122,"Upper middle income",4
+"166",121,"Upper middle income",4
+"167",120,"High income: nonOECD",4
+"168",118,"Upper middle income",4
+"169",117,"Upper middle income",3
+"170",116,"High income: OECD",3
+"171",115,"High income: OECD",3
+"172",114,"High income: OECD",3
+"173",113,"Upper middle income",3
+"174",112,"High income: OECD",3
+"175",111,"Lower middle income",3
+"176",110,"High income: OECD",3
+"177",109,"High income: OECD",3
+"178",101,"High income: nonOECD",3
+"179",90,"Upper middle income",3
+"180",79,"High income: OECD",3
+"181",68,"Lower middle income",2
+"182",57,"Upper middle income",2
+"183",46,"High income: OECD",2
+"184",35,"High income: OECD",1
+"185",24,"High income: OECD",1
+"186",13,"High income: OECD",1
+"187",2,"High income: nonOECD",1
+"188",185,"Lower middle income",5
+"189",174,"High income: OECD",5
+"190",163,"Upper middle income",5
+"191",152,"High income: OECD",4
+"192",141,"High income: OECD",4
+"193",130,"High income: OECD",4
+"194",119,"High income: OECD",4
+"195",108,"Upper middle income",3
+"196",1,"High income: OECD",1
