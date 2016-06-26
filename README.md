@@ -32,3 +32,27 @@ A Data set was created by combining the Country Data with the Gross Domestic Pro
 
 The goal of this case study was to cleanse the data and then perform some simple analytics against the cleansed data.
 
+All Datasets created are stored in the Data Folder
+The Rmarkdown, .md, and html files are in the RMarkdown folder
+
+R Session Information
+R version 3.3.0 (2016-05-03)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 7 x64 (build 7601) Service Pack 1
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252    LC_MONETARY=English_United States.1252
+[4] LC_NUMERIC=C                           LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] tcltk     stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] sqldf_0.4-10  RSQLite_1.0.0 DBI_0.4       gsubfn_0.6-6  proto_0.3-10  dplyr_0.4.3   ggplot2_2.1.0
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_0.12.5        knitr_1.12.3       magrittr_1.5       munsell_0.4.3      colorspace_1.2-6   R6_2.1.2          
+ [7] stringr_1.0.0      httr_1.1.0         plyr_1.8.3         tools_3.3.0        parallel_3.3.0     grid_3.3.0        
+[13] gtable_0.2.0       htmltools_0.3.5    yaml_2.1.13        digest_0.6.9       assertthat_0.1     countrycode_0.18  
+[19] crayon_1.3.1       RColorBrewer_1.1-2 bitops_1.0-6       RCurl_1.95-4.8     testthat_1.0.2     memoise_1.0.0     
+[25] rmarkdown_0.9.6    labeling_0.3       stringi_1.0-1      scales_0.4.0       swirl_2.4.1        chron_2.3-47      
