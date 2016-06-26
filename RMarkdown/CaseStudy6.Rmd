@@ -1,0 +1,319 @@
+---
+title: "Case Study 6"
+Author: Karen Clark
+Date: June 2,2016
+output:
+  html_document:
+    toc: true
+    number_sections: true
+---
+
+#Introduction
+
+The goal of this case study was to cleanse the selected data detailed below and then perform some simple analytics against the cleansed data.
+
+There are two data sets that are used to complete this case study:
+
+1.	Country data (234 observations) - Contains data by country, Region, , income population classification, and various other variables that were not used in this case study.  (http://data.worldbank.org/data-catalog/ed-stats)
+
+
+2.	Gross Domestic Product Ranking Table - FGDP (243 observations) - contains a view of a countries economy over a course of a year. The data supplied is the country, the ranking of the country, and the economy for that country. (http://data.worldbank.org/data-catalog/GDP-ranking-table)
+
+A Dataset was created by combining the Country Data with the Gross Domestic Product (GDP) Ranking table on the country code.  Out of the 228 countries in the GDP data set only 195 records that match to the country data dataset.
+
+#Data Cleansing
+Both datasets needs to have columns and rows removed in order to tidy the data.
+
+##Exploring the data set: Gross Domestic Product Ranking Table - GDP
+```{r}
+#Opening csv file in R and storing data set in a data frame.
+GDA <- read.csv("C:\\Users\\kclark\\Personal\\SMU\\Doing Data Science MSDS 6306\\Unit 6\\GDP.csv", stringsAsFactors = FALSE, header = FALSE)
+
+#Validating that GDA is a data frame
+class(GDA)
+
+#Checking the structure of the data frame and data types
+str(GDA)
+
+#View the first 10 records for the GDA dataset
+head(GDA)
+
+#view the last 10 records of the GDA dataset
+tail(GDA)
+```
+
+###Row and Column Selections for GDP-Ranking Dataset
+
+The first 5 rows of the GDA data set includes the variable names and blanks.  The last 7 rows include information about the data set.  The first 5 rows and the last 7 rows are removed because they add no value to the data to be analyzed.
+
+```{r}
+#This statement will only keep rows 6 to 236 and a new version of the dataset - GDA1 is created.  
+GDA1 <- GDA[6:236,]
+```
+
+The current GDA1 data set had 6 columns, but only 4 actually contain the data for the case study.  The code below will remove the extra columns that are not needed.
+```{r}
+#Remove columns 3 and 6 from the dataset by only selecting 1, 2, 4, and 5
+GDA1 <- GDA1[c(1,2,4,5)]
+```
+
+### Adding Variable Names to the Dataset
+
+Names to each variable are added to the data set.  The industry standard of capitalizing each word was applied.  The variable names are human readable and self-explanatory.
+```{r}
+#Add Names to the variables in the data set
+names(GDA1) <- c("CountryCode","Ranking","Country", "Economy")
+```
+
+###Removing Blank Records and Bad data in the Dataset
+
+There are a couple of blank records still within the data set. Set the blank variables to NA for blank rows and then remove them from the data set and create a new data set GDA2
+```{r}
+#sets the blank variables to NA where entire rows are blank if GDA - Economy variable is blank
+GDA1[GDA1==""] <- NA
+
+#Remove rows where all columns are NAs
+GDA2 <- GDA1[apply(GDA1,1,function(x)any(!is.na(x))),]
+```
+
+The data set GDA2 still contains records where the Economy field does not have an applicable value stored in it - " .. ".  The identified rows below will be removed from the GDA2 data set.
+
+```{r}
+#Find the rows where GDA2$Economy = " .. "
+fslines <- which(GDA2$Economy == " .. ")
+
+# view the record numbers for the rows that were identified
+fslines
+
+#remove identified rows and create a new data set GDA3
+GDA3 <- GDA2[-which(GDA2$Economy == " .. "), ]
+
+```
+###Final Dataset for GDP-Ranking 
+
+The final dataset for GDP-Ranking is cleansed and ready to use
+
+```{r}
+#view dataset GDA3
+GDA3
+```
+
+##Exploring the Dataset: Country Data
+
+```{r} 
+#Read the csv file into R and storing the data in a data frame named CountryData
+CountryData <- read.csv("C:\\Users\\kclark\\Personal\\SMU\\Doing Data Science MSDS 6306\\Unit 6\\country.csv", stringsAsFactors = FALSE, header = FALSE)
+
+#Validating that CountryData is a data frame
+class(CountryData) 
+
+#Checking the structure of the data frame and data types
+str(CountryData)
+
+#View the first 10 rows of data
+head(CountryData)
+
+#View last 10 rows of data
+tail(CountryData)
+```
+
+###Selecting the Right Columns and Rows for Country Data Dataset
+There are 31 columns in the data set CountryData.  Most do not have significant value to the data being analyzed.  Therefore, the code below will select the pertinent columns to keep and create a new data set CData.
+
+```{r}
+#This statement will only keep columns 1, 2, and 9 which are the Country Code, Short Name, Income Group.  New Data set create - CData
+CData <- CountryData[c(1,2,9)]
+
+#View dataset
+CData
+```
+
+The first row of the data set CData contains the variable names.  The code below will remove them from the data set.
+```{r}
+#Remove row 1 from the dataset CData
+CData <- CData[-c(1), ]
+
+#View Dataset
+CData
+```
+Names are added to each variable are added to the data set.  The industry standard of capitalizing each word was applied.  The variable names are human readable and self-explanatory.
+
+```{r}
+#Add Names to the variables in the data set
+names(CData) <- c("CountryCode","Country", "IncomeGroup")
+
+#view dataset
+CData
+```
+
+The data set CData still contains records where the CData$IncomeGroup field is empty. The identified rows below will be removed from the CData data set
+```{r}
+#Find the rows where CData$IncomeGroup = " " and update to NA
+CData <- apply(CData, 2, function(x) gsub("^$|^ $", NA, x))
+
+#view dataset
+CData
+```
+
+##Merging the Datasets
+To have a complete dataset GDA3 and CData were merged on CountryCode.
+
+```{r}
+#cleanset data set created with all records from 
+cleanset <- merge( GDA3,  CData,  by=1:1, all.GDA3= TRUE)
+
+#view the new dataset
+cleanset
+
+```
+###Final Data Cleansing
+
+There are still rows with NA in fields needed for data analysis.  The code below omits them from the cleanset data set.
+
+```{r}
+#remove rows with NA and create new data set cleanset.filtered
+cleanset.filtered <- cleanset[complete.cases(cleanset),]
+```
+
+There is an extra country variable in the cleanset.filtered dataset, this needs to be removed.
+```
+```{r}
+#remove column 5 and only keep columns 1,2,3,4, and 6
+cleanset.filtered <- cleanset.filtered[c(1,2,3,4,6)]
+
+#view data set to validate column 5 have been removed
+cleanset.filtered
+```
+###Examining Data Types 
+The data type of the variables is very important, so one more look at the data frame structure is needed
+```{r}
+#view data type of the data set cleanset.filtered
+str(cleanset.filtered)
+```
+The Ranking variable is a character field which will make sorting difficult.  The Ranking data type was changes to a numeric data type to fix this issue.
+```{r}
+#Change data type of Ranking field
+cleanset.filtered$Ranking <- as.numeric(cleanset.filtered$Ranking)
+
+#validate data type was changed
+ str(cleanset.filtered)
+```
+The data cleansing is complete. 
+
+#Questions
+The following are a series of questions that need to be answered to get a clear look at the data to be analyzed.
+
+##Question 1:
+Match the data based on the country short code. This was achieved by the merge function executed earlier (merge( GDA3,  CData,  by=1:1, all.GDA3 = TRUE)). The 1:1 tells the r code to match on the first column of each dataset.
+
+How many IDs matched?
+Question 1: Match the data based on the country shortcode.  How many of the IDs match?
+``` {r}
+#count the number of rows in cleanset.filtered data set
+nrow(cleanset.filtered)
+```
+##Question 2:
+Sort the data frame in descending order by GDP rank (so the United States is last)
+```{r}
+#Create new data set cleanset.sorted and sort by Ranking descending
+cleanset.sorted <- cleanset.filtered[order(-cleanset.filtered$Ranking),]
+
+#view the new data set cleanset.sorted
+cleanset.sorted
+```
+What is the 13th country in the resulting data frame?
+```{r}
+#Make sure the data frame is sorted on the Ranking variable
+cleanset.sorted <- cleanset.sorted[order(-cleanset.sorted$Ranking),]
+
+#display 13th row
+cleanset.sorted[13,]
+```
+##Question 3:
+What are the average GDP rankings for the "High income: OECD" and the "High income: nonOECD" groups?
+```{r}
+#calculate mean of IncomeGroup where it equals "High Income: OECD"
+highincome1 <- mean(cleanset.sorted$Ranking[cleanset.sorted$IncomeGroup == "High income: OECD"])
+
+#View value
+highincome1
+
+```
+Average for "High Income: NonOECD" Group:
+```{r}
+#calculate mean of IncomeGroup where it equals "High Income: nonOECD"
+highincome2 <- mean(cleanset.sorted$Ranking[cleanset.sorted$IncomeGroup == "High income: nonOECD"])
+
+#View value
+highincome2
+
+```
+
+##Question 4:
+
+Plot the GDP for all the countries.  Use ggplot to color your plot by Income Group
+
+```{r}
+#Create a new variable by parsing the IncomeGroup field and assigning numeric values
+cleanset.sorted$IncomeBreak <- ifelse(cleanset.sorted$IncomeGroup == "Upper middle income", 
++                             c(1), ifelse(cleanset.sorted$IncomeGroup == "Lower middle income",c(2),ifelse(cleanset.sorted$IncomeGroup == "Low income", c(3), ifelse(cleanset.sorted$IncomeGroup == "High income: nonOECD", c(4), ifelse(cleanset.sorted$IncomeGroup == "High income: OECD", c(5), NA)))))
+
+#view dataset
+cleanset.sorted
+```
+
+In order to provide plots of the data that include the Economy variable, the data type needed to be changed from a character to numeric.
+
+```{r}
+#convert Economy variable to a numeric data type but first remove the commas.
+cleanset.sorted$Economy <- as.numeric(gsub(",", "", cleanset.sorted$Economy))
+
+#check the data type to make sure 
+str(cleanset.sorted)
+```
+Plot of Countries by Income Group
+```{r}
+library(ggplot2)
+#Creates ggplot 
+Dataplot <- ggplot(data = cleanset.sorted,aes( x = cleanset.sorted$CountryCode, y = cleanset.sorted$Ranking, group = 1))+geom_point(aes(color=factor(cleanset.sorted$IncomeGroup)))+theme(legend.title = element_text(colour = "chocolate", size = 10, face="bold")) +theme(axis.text.x=element_text(angle= 50, size=10,vjust = 0.5))+scale_color_brewer(palette = "Set1", name="Country Income Groups")+labs(x = "Country Code", y = "Country Rank")+scale_x_discrete(breaks = seq(cleanset.sorted$CountryQuartile))
+
+#Displays plot
+Dataplot
+```
+
+
+###Interpertation of Plot
+The Income Group correlates with the GDP ranking for the country.  There are some high ranking countries that have Low to Low middle income groupings.
+
+##Question 5:
+Cut the GDP ranking in 5 separate quantile groups. Make a table versus Income Group.
+
+###First create Income Group table
+```{r}
+#Create income group table with variables Ranking, IncomeGroup, and CountryQuartile variables
+library(dplyr)
+cleanset.sorted$CountryQuartile <- ntile(cleanset.sorted$Ranking,5)
+
+IncomeGoups <- cleanset.sorted[c(2,5,7)]
+
+#View data in IncomeGroups Table
+IncomeGoups
+```
+
+How many countries are Lower Middle Income but among the 38 nations with the highest GDP?
+```{r}
+library(proto)
+library(gsubfn)
+library(RSQLite)
+library(sqldf)
+#pulling how many countries have an IncomeGroup equal to Lower Middle Income and is one of the top 38 nations with the highest GDP
+sqldf("select count(*) as totalCountries from IncomeGoups where IncomeGroup = 'Lower middle income' and Ranking between 1 and 38")
+
+```
+
+
+
+
+
+
+
