@@ -77,14 +77,14 @@ cleanset
 This dataset was created when the two datasets GDA3 and CData were merged on Countrycode.  All records from the GDA3 were added to the dataset and only the records from 
 CData where there was a Country Code match was added to the table
 
-cleanset <- merge(GDA3, CData, by="CountryCode", all.GDA3=TRUE)
+cleanset <- merge(GDA3, CData, by=1:1, all.GDA3=TRUE)
 
 cleanset.filtered 
 
 This dataset was created to remove additional rows where there were NAs
 
 There are still rows with NA in fields needed for data analysis.  The code below omits them from the cleanset data set.
-cleanset.filtered <- cleanset[!row.has.na,]
+cleanset.filtered <- cleanset[complete.cases(cleanset),]
 
 There is an extra country variable in the cleanset.filtered dataset, this needs to be removed.
 cleanset.filtered <- cleanset.filtered[c(1,2,3,4,6)]
